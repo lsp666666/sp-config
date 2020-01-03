@@ -3,11 +3,13 @@ spring:
     name: item-service
   cloud:
     config:
-      override-none: true  
+      override-none: true
+   
 server:
-  port: 8001    
+  port: 8001
 
 eureka:
   client:
     service-url:
       defaultZone: http://eureka1:2001/eureka, http://eureka2:2002/eureka
+
